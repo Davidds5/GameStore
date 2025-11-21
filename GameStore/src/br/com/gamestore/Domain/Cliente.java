@@ -11,8 +11,8 @@ public class Cliente {
     private final List<String> historicoDeCompras = new ArrayList<>();
 
 
-    public Cliente(String id, String id1, String nome, String email, String cpf){
-        this.id = id1;
+    public Cliente(String id, String nome, String email, String cpf){
+        this.id = id;
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;

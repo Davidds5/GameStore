@@ -3,8 +3,8 @@ package br.com.gamestore.Domain;
 public class Jogo extends Produto{
     private String plataforma;
 
-    public Jogo(String codigo, String nome, String descricao, double preco, int estoque, Categoria categoria, String plataforma) {
-        super(codigo, nome, descricao, preco, estoque, categoria);
+    public Jogo(String codigo, String nome, String descricao, double preco, int estoque, String plataforma) {
+        super(codigo, nome, descricao, preco, estoque, Categoria.JOGO);
         this.plataforma = plataforma;
     }
 

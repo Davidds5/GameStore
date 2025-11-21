@@ -3,8 +3,8 @@ package br.com.gamestore.Domain;
 public class Console extends Produto{
     private String fabricante;
 
-    public Console(String codigo, String nome, String descricao, double preco, int estoque, Categoria categoria, String fabricante) {
-        super(codigo, nome, descricao, preco, estoque, categoria);
+    public Console(String codigo, String nome, String descricao, double preco, int estoque, String fabricante) {
+        super(codigo, nome, descricao, preco, estoque, Categoria.CONSOLE);
         this.fabricante = fabricante;
     }
 
