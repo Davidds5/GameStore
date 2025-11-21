@@ -24,5 +24,13 @@ public class ProdutoService {
         return opt.get();
 
     }
-    public List<Produto> produtosComEstoqueBaixo()
+    public List<Produto> produtosComEstoqueBaixo(int limite) {
+        List<Produto> res = new ArrayList<>();
+        for (Produto p : produtos) {
+            if (p.getEstoque() <= limite) {
+                res.add(p);
+            }
+        }
+        return res;
+    }
 }
