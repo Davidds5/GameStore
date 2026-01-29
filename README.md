@@ -1,46 +1,40 @@
-# 🎮 GameStore
+# GameStore
 
-Sistema de loja de jogos desenvolvido em **Java**, executado via **console**, com foco em aplicar conceitos de **POO**, organização em camadas e boas práticas básicas de estruturação.
+Sistema de loja de jogos desenvolvido em Java, executado via console, com foco em Programação Orientada a Objetos, organização em camadas e regras de negócio.
 
-O projeto simula o funcionamento de uma loja de games, permitindo gerenciar produtos, clientes e vendas.
+O projeto simula o funcionamento de uma loja de games, permitindo o gerenciamento de produtos, clientes, carrinho de compras e vendas.
 
----
-
-## 📌 Objetivo do Projeto
-
-Este projeto tem como objetivo praticar:
-
-- Programação Orientada a Objetos (POO)
-- Separação de responsabilidades (Domain, Service, App, Util)
-- Manipulação de listas em memória
+## Funcionalidades
+- Cadastro e listagem de produtos (Jogos, Consoles e Acessórios)
+- Controle de estoque com validação de quantidade
+- Cadastro de clientes
+- Criação de carrinho de compras
+- Finalização de vendas com geração de nota
+- Histórico de compras por cliente
+- Relatórios de vendas e produtos com estoque baixo
 - Tratamento de exceções personalizadas
-- Simulação de fluxo de vendas
 
----
+## Objetivo do Projeto
+Projeto desenvolvido para praticar:
+- Programação Orientada a Objetos (POO)
+- Abstração, herança e polimorfismo
+- Separação de responsabilidades (Domain, Service, Util)
+- Manipulação de coleções em memória
+- Tratamento de exceções
+- Lógica de negócio aplicada a um cenário real
 
-## 🧱 Estrutura do Projeto
+## Estrutura do Projeto
+(br.com.gamestore …)
 
-```bash
-br.com.gamestore
-│
-├── App
-│   └── Main.java
-│
-├── Domain
-│   ├── Produto.java
-│   ├── Jogo.java
-│   ├── Console.java
-│   ├── Acessorio.java
-│   ├── Cliente.java
-│   └── Categoria.java
-│
-├── Service
-│   ├── ProdutoService.java
-│   ├── ClienteService.java
-│   └── VendaService.java
-│
-├── Exceptions
-│   └── EstoqueInsuficiente.java
-│
-└── Util
-    └── Menu.java
+## Tecnologias Utilizadas
+- Java
+- Collections Framework
+- Programação Orientada a Objetos
+- API de Datas (LocalDateTime)
+- UUID
+
+## Como Executar
+1. Clone o repositório
+2. Compile o projeto com Java 17+ (ou a versão que você usa)
+3. Execute a classe `Main`
+4. Utilize o menu interativo no terminal
